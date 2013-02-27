@@ -1,3 +1,5 @@
 = Xapian-Ruby
 
 Xapian-Ruby installs the current xapian libs and ruby bindings
+
+NOTE: This disables two of the backends (chert, brass) when compiling, but allows it to build on heroku. The default backend since 1.0 is flint.

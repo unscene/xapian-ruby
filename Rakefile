@@ -26,7 +26,7 @@ task :default do
 	system! "mkdir -p lib"
 
 	Dir.chdir core do
-		system! "./configure --prefix=#{prefix} --exec-prefix=#{prefix}"
+		system! "./configure --prefix=#{prefix} --exec-prefix=#{prefix} --disable-backend-brass --disable-backend-chert"
 		system! "make clean all"
 		system! "cp -r .libs/* ../lib/"
 	end
